@@ -1,0 +1,14 @@
+<template name="tags">
+
+	<form id="tagForm">
+		<input type="text" id="tagName">
+		<input type="submit" value="create">
+	</form>
+
+	<hr>
+
+	{{#each tags}}
+		{{name}}<hr>
+	{{/each}}
+
+</template>

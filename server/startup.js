@@ -4,4 +4,9 @@ Meteor.startup(function() {
 		return Blogs.find({});
 	});
 
+
+	Meteor.publish("tags", function() {
+		return Tags.find({});
+	});
+
 });
