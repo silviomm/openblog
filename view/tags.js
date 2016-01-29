@@ -15,7 +15,7 @@ if(Meteor.isClient){
 	});
 
 	Template.tags.tags = function(){
-		return Tags.find().fetch().reverse();
+		return Tags.find({}, {sort: {name: 1}});
 	};
 
 }
