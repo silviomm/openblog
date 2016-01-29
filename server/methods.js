@@ -12,9 +12,11 @@ Meteor.methods({
 	},
 
 	adicionaTag : function(nome) {
-		Tags.insert({
-			name: nome
-		})
+		var count = Tags.find({name : nome}).count();
+		if(count == 0)
+			Tags.insert({
+				name: nome
+			})
 	}
 	
 });
