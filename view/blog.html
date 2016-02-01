@@ -1,0 +1,11 @@
+<template name="blog">
+
+	{{> blogForm}}
+
+	{{#each blogs}}
+		<hr>
+		<h3>{{title}}</h3><br>
+		{{body}}<br>
+	{{/each}}
+
+</template>

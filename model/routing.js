@@ -7,7 +7,7 @@ Router.route('/', {
 });
 
 Router.route('/:tag', {
-	template : 'blogOfTag',
+	template : 'blog',
 	data : function() {
 		var currentTag = this.params.tag;
 		return Tags.findOne({name : currentTag});
