@@ -9,7 +9,7 @@ if(Meteor.isClient){
 			var nomeTag = $('#tagName').val();
 			$('#tagName').val('');
 
-			Meteor.call('adicionaTag', nomeTag);
+			Meteor.call('addTag', nomeTag);
 		}
 	
 	});
