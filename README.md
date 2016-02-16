@@ -4,7 +4,7 @@ A project created with Meteor so I can learn this JS framework.
 
 ## Idea
 <hr>
-"Tags" would be the name of the blog. Each tag generates a URL that ends with the name of it, e that URL contains an open-blog.
+Each "Tag" would be the name of a blog and generates a URL that ends with the name of it. That URL contains an open-blog.
 Open-blog can be interpreted as a "dontpad of blogs", where anyone can post/delete any content in there(that is exclusive to that tag).
 
 ## Planned Objectives
