@@ -3,7 +3,7 @@ Router.configure({
 });
 
 Router.route('/', {
-	template : 'tags'
+	template : 'index'
 });
 
 Router.route('/:tag', {
