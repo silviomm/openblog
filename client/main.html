@@ -2,16 +2,29 @@
 
 <div class="row">
     
-    <div class="col s3">
-        {{> tags}}
+    <div id="side-menu">
+        <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a></div>
+        <ul id="nav-mobile" class="side-nav fixed">
+            {{> tags}}
+        </ul>
     </div>
     
-    <div class="col s9">
-        {{> header}}
-        {{> yield}}
-    </div>
     
-    {{> footer}}
+    <div id="main-page">
+        <div class="col s12 m9 l10">
+            {{> header}}
+            {{> yield}}
+            {{> footer}}
+        </div>
+    </div>
+      
+    <style>
+                @media (min-width: 991px) {
+        #main-page {
+            padding-left: 240px;
+        }
+        }    
+    </style>
         
 </div>
 </template>
