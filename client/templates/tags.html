@@ -1,16 +1,15 @@
 <template name="tags">
 
-    <div class="container">
-            <form id="tagForm">
-                <div class="input-field">
-                    <input type="text" id="tagName" placeholder="create new tag">
-                </div>
-                <input type="submit" value="create" class="btn waves-effect waves-light">
-            </form>
-    </div>
-    
+	<form id="tagForm">
+		<input type="text" id="tagName" placeholder="create new tag">
+		<input type="submit" value="create">
+	</form>
+
+	<hr>
+
+
 		{{#each tags}}
-			<li class="yellow-text text-lighten-2"><a href={{name}}>#{{name}}</a></li>
-        {{/each}}
+			<li><a href={{name}}>#{{name}}</a></li>
+		{{/each}}
 
 </template>
